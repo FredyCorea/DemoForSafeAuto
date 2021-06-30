@@ -9,7 +9,6 @@ namespace DriversAndTripsDemo
 {
      class Reports
      {
-
           public static void TripsByDriverReport(ref List<AutoDriver> DriversList, ref List<Trips> TripsList)
           {
                Console.WriteLine("");

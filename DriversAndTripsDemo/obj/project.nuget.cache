@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "JsoFpoblFuwnJi7Kz88UPLD1ZQpcbOjWGkUZiuin8oiJ2HZBAwiG4cKMDkxbrK4fJz6t/NqzKybiBmQrujyq8w==",
+  "success": true,
+  "projectFilePath": "C:\\DemoForSafeAuto\\DemoForSafeAuto\\DriversAndTripsDemo\\DriversAndTripsDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fredy\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\fredy\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\fredy\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
+    "C:\\Users\\fredy\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
