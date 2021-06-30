@@ -101,7 +101,8 @@ namespace DriversAndTripsDemo
 
           public static void Log(string errorTolog)
           {
-               string path = @"C:\DemoForSafeAuto\Log.txt";
+               //string path = @"C:\DemoForSafeAuto\Log.txt";
+               string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\Data\\", @"Log.txt");
 
                // This text is added only once to the file.
                if (!File.Exists(path))
