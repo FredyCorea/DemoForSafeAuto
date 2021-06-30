@@ -1,0 +1,69 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DriversAndTripsDemo/1.0.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0"
+        },
+        "runtime": {
+          "DriversAndTripsDemo.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.NETCore.Targets/1.1.0": {},
+      "System.Collections/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DriversAndTripsDemo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vJTgR3nQaj6a8d4navNdrkwXZr1oB6Il8eTBG5km8/BoZzft9xReGs0Mdq1HLxdnccWXikAEFv6ehWw+qgn42w==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zektjX94C0FqlE0lhI2c7A+B2H/Snum7zb5OUco4N7CtrM5koAmTQZ3l5iNhx/fDKcqi4ahyvKpnakkYrZdK1g==",
+      "path": "microsoft.netcore.targets/1.1.0",
+      "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
+    },
+    "System.Collections/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rqt5whgTW+9SHsvbHgx29+xZD1PxV6jPD+6RkfpcBiZRhGs90vOOILnsbksd6KV5P+g0rm74Q1CA/XGbwa7DCw==",
+      "path": "system.collections/4.3.0",
+      "hashPath": "system.collections.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-g8tzoRtAsTgqrtMoNYqw/d55ndQGBNIZjSVrAN7DYoOsActLltQoMmQjpOmVYm0Yagu2eeNkUZ53iQBVhNI9TA==",
+      "path": "system.runtime/4.3.0",
+      "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    }
+  }
+}

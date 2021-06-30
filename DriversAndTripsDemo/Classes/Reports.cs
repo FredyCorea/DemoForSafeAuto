@@ -9,8 +9,14 @@ namespace DriversAndTripsDemo
 {
      class Reports
      {
+
           public static void TripsByDriverReport(ref List<AutoDriver> DriversList, ref List<Trips> TripsList)
           {
+               //Sort the trips list by dirver id + trip miles descending
+               var TripsListSorted = from t in TripsList
+                                     orderby t.id, t.TripMiles descending
+                                     select t;
+
                Console.WriteLine("");
                Console.WriteLine("");
                Console.WriteLine("SafeAuto - Drivers Trips Report");
@@ -33,28 +39,35 @@ namespace DriversAndTripsDemo
                     decimal totalMiles = 0;
                     decimal totalTime = 0;
                     decimal totalSpeed = 0;
-                    foreach (var itemTrip in TripsList)
+
+                    //foreach (var itemTrip in TripsList)
+                    foreach (var itemTrip in TripsListSorted)
                     {
                          if (itemTrip.DriverId == itemDriver.DriverId)
                          {
-                              // Console.WriteLine(itemTrip.id.ToString() + "         " + itemTrip.TripStart.ToString("HH:m") + "      " + itemTrip.TripEnd.ToString("HH:m") + "      " + itemTrip.TripDuration.Minutes.ToString() + "          " + itemTrip.TripMiles.ToString() + "       " + itemTrip.Speed.ToString());
-                              Console.WriteLine(tripCnt.ToString() + AddSpaces(tripCnt.ToString()) +
-                                   itemTrip.TripStart.ToString("HH:m") + AddSpaces(itemTrip.TripStart.ToString("HH:m")) +
-                                   itemTrip.TripEnd.ToString("HH:m") + AddSpaces(itemTrip.TripEnd.ToString("HH:m")) +
-                                   itemTrip.TripDuration.Minutes.ToString() + AddSpaces(itemTrip.TripDuration.Minutes.ToString()) +
-                                   itemTrip.TripMiles.ToString() + AddSpaces(itemTrip.TripMiles.ToString()) + itemTrip.Speed.ToString());
+                              //Discard any trips that average a speed of less than 5 mph or greater than 100 mph.
+                               if (itemTrip.Speed >= 5 && itemTrip.Speed <=100)
+                              {
+                                   Console.WriteLine(tripCnt.ToString() + AddSpaces(tripCnt.ToString()) +
+                                        itemTrip.TripStart.ToString("HH:m") + AddSpaces(itemTrip.TripStart.ToString("HH:m")) +
+                                        itemTrip.TripEnd.ToString("HH:m") + AddSpaces(itemTrip.TripEnd.ToString("HH:m")) +
+                                        itemTrip.TripDuration.ToString() + AddSpaces(itemTrip.TripDuration.ToString()) +
+                                        itemTrip.TripMiles.ToString() + AddSpaces(itemTrip.TripMiles.ToString()) + Math.Round(itemTrip.Speed, 0).ToString() + "mph");
 
-                              tripCnt++;
-                              totalMiles = totalMiles + itemTrip.TripMiles;
-                              totalTime = totalTime + itemTrip.TripDuration.Minutes;
-                              totalSpeed = totalSpeed + itemTrip.Speed;
+                                   tripCnt++;
+                                   totalMiles = totalMiles + itemTrip.TripMiles;
+                                   totalTime = totalTime + itemTrip.TripDuration;
+                                   totalSpeed = totalSpeed + itemTrip.Speed;
+                              }
                          }
                     }
+
+                    decimal avgSpeed = (totalMiles / totalTime) * 60;
 
                     Console.WriteLine(string.Concat(Enumerable.Repeat("-", 55)));
                     Console.WriteLine("Total Miles                  : " + totalMiles.ToString());
                     Console.WriteLine("Total Driving Time in Minutes: " + totalTime.ToString());
-                    Console.WriteLine("Aeverage Speed               : " + (totalSpeed / tripCnt).ToString());
+                    Console.WriteLine("Average Speed                : " + Math.Round(avgSpeed, 0).ToString() + "mph");
                     Console.WriteLine("");
 
                     Console.WriteLine("");

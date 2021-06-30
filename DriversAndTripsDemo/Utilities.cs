@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Reflection;
 
 namespace DriversAndTripsDemo
 {
@@ -14,7 +15,10 @@ namespace DriversAndTripsDemo
                String line;
                try
                {
-                    StreamReader sr = new StreamReader("C:\\DemoForSafeAuto\\InputData.txt");
+
+                    //StreamReader sr = new StreamReader("C:\\DemoForSafeAuto\\InputData.txt");
+                    string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\Data\\", @"InputData.txt");
+                    StreamReader sr = new StreamReader(path);
 
                     //Read the first line of text
                     line = sr.ReadLine();

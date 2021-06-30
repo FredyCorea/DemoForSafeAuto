@@ -12,7 +12,7 @@ namespace DriversAndTripsDemo
           public int DriverId { get; set; }
           public DateTime TripStart { get; set; }
           public DateTime TripEnd { get; set; }
-          public TimeSpan TripDuration { get; set; }
+          public decimal TripDuration { get; set; }
           public decimal TripMiles { get; set; }
           public decimal Speed { get; set; }
 
@@ -22,9 +22,12 @@ namespace DriversAndTripsDemo
                this.DriverId = driverid;
                this.TripStart = tripStart;
                this.TripEnd = tripEnd;
-               this.TripDuration = this.TripEnd.Subtract(this.TripStart);  // this.TripEnd - this.TripStart;
+               //this.TripDuration = this.TripEnd.Subtract(this.TripStart);  // this.TripEnd - this.TripStart;
+               TimeSpan ts = this.TripEnd.Subtract(this.TripStart);  
+               this.TripDuration = (ts.Hours * 60) + ts.Minutes;
                this.TripMiles = miles;
-               this.Speed = Math.Round( (this.TripMiles / ((this.TripDuration.Hours*60) + this.TripDuration.Minutes))*60,1);
+               //(miles/minutes)*60
+               this.Speed = Math.Round( (this.TripMiles / this.TripDuration )*60,1);
           }
      }
 }

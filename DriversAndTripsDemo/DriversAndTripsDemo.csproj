@@ -9,4 +9,8 @@
     <PackageReference Include="System.Collections" Version="4.3.0" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if not exist &quot;$(ProjectDir)$(OutDir)Data&quot; mkdir &quot;$(ProjectDir)$(OutDir)Data&quot;&#xD;&#xA;copy &quot;$(ProjectDir)Data\&quot;  &quot;$(ProjectDir)$(OutDir)Data\&quot;" />
+  </Target>
+
 </Project>

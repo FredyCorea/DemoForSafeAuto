@@ -1,0 +1,15 @@
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\bin\Release\net5.0\DriversAndTripsDemo.exe
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\bin\Release\net5.0\DriversAndTripsDemo.deps.json
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\bin\Release\net5.0\DriversAndTripsDemo.runtimeconfig.json
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\bin\Release\net5.0\DriversAndTripsDemo.runtimeconfig.dev.json
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\bin\Release\net5.0\DriversAndTripsDemo.dll
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\bin\Release\net5.0\ref\DriversAndTripsDemo.dll
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\bin\Release\net5.0\DriversAndTripsDemo.pdb
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\DriversAndTripsDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\DriversAndTripsDemo.AssemblyInfoInputs.cache
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\DriversAndTripsDemo.AssemblyInfo.cs
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\DriversAndTripsDemo.csproj.CoreCompileInputs.cache
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\DriversAndTripsDemo.dll
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\ref\DriversAndTripsDemo.dll
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\DriversAndTripsDemo.pdb
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\DriversAndTripsDemo.genruntimeconfig.cache
