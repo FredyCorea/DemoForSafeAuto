@@ -13,3 +13,4 @@ C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\Driver
 C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\ref\DriversAndTripsDemo.dll
 C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\DriversAndTripsDemo.pdb
 C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\DriversAndTripsDemo.genruntimeconfig.cache
+C:\DemoForSafeAuto\DemoForSafeAuto\DriversAndTripsDemo\obj\Release\net5.0\DriversAndTripsDemo.csprojAssemblyReference.cache
